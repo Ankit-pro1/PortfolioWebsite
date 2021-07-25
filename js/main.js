@@ -23,7 +23,7 @@ $(document).ready(function(){
         $('.menuBtn i').toggleClass("active");
     });    
     // Carousel Scripting
-    $(".carousel").owlCarousel({
+    $(".owl-carousel").owlCarousel({
         margin:20,
         loop:true,
         autoplayTimeOut: 1000,
@@ -44,3 +44,20 @@ $(document).ready(function(){
         }
     });
 });
+
+(()=>{
+    const readMoreBtn = document.querySelector('.read-more-btn');
+    const dots = document.querySelector('#dots');
+    const readMore = document.querySelector('.read-more');
+    readMoreBtn.addEventListener('click',()=>{
+        if(dots.style.display === 'none'){
+            dots.style.display = 'inline';
+            readMoreBtn.innerHTML='read more';
+            readMore.style.display='none';
+        }else{
+            dots.style.display = 'none';
+            readMoreBtn.innerHTML = 'read less';
+            readMore.style.display = 'inline';
+        }
+    })
+})();

@@ -199,10 +199,6 @@ section{
 .about .left img:hover{
     opacity: 0.8;
 }
-.about .right a{
-    padding: 2px 20px;
-    font-size: 20px;
-}
 .about .right .text{
     font-size: 25px;
     font-weight: 600;
@@ -214,7 +210,13 @@ section{
 .about .right .text span{
     color: crimson;
 }
-
+.about .read-more{
+    display: none;
+}
+.about .read-more-btn{
+    font-weight: 500;
+    cursor: pointer;
+}
 /* Services Section */
 .services{
     background-color: #000;
@@ -242,6 +244,7 @@ section{
 }
 .services .service-content .card .box{
     transition: all 0.3s ease;
+    width: 100%;
 }
 .services .service-content .card .box:hover{
     transform: scale(1.05);
@@ -301,16 +304,22 @@ section{
     background: crimson;
 }
 .skills .skills-content .right .bars .html::before{
-    width: 90%;
+    width: 80%;
 }
 .skills .skills-content .right .bars .css::before{
-    width: 80%;
-}
-.skills .skills-content .right .bars .js:before{
     width: 70%;
 }
-.skills .skills-content .right .bars .java::before{
-    width: 80%;
+.skills .skills-content .right .bars .bootstrap::before{
+    width: 70%;
+}
+.skills .skills-content .right .bars .js:before{
+    width: 60%;
+}
+.skills .skills-content .right .bars .react:before{
+    width: 50%;
+}
+.skills .skills-content .right .bars .php::before{
+    width: 60%;
 }
 .skills .skills-content .right .bars .mysql::before{
     width: 70%;
