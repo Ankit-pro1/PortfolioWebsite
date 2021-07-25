@@ -45,7 +45,7 @@
             <div class="home-content">
                 <div class="text-1">Hello, my name is</div>
                 <div class="text-2">Ankit Kumar</div>
-                <div class="text-3">And I'm a <span>Full Stack Developer</span></div>
+                <div class="text-3">And I'm a <span class="typed1"></span></div>
                 <a href="#contact" class="btn">Hire me</a>
             </div>
         </div>
@@ -60,7 +60,7 @@
                     <img src="images/Profile1.jpg" alt="">
                 </div>
                 <div class="column right">
-                    <div class="text">I'm Ankit and I'm a <span>Full Stack Developer</span> </div>
+                    <div class="text">I'm Ankit and I'm a <span class="typed2"></span></div>
                     <p> I'm very passionate
                         about coding and love to doing it. I'm coding since last 3 years while studying Computer Science
                         Engineering in Guru Nanak Dev Institute of Technology in Delhi and started my professional
@@ -73,7 +73,7 @@
                             </a> where I posts genuine content regarding the coding.</span><span
                             class="read-more-btn">read more</span>
                     </p>
-                    <a href="./AnkitKumarResume.pdf" class="btn">Download CVV</a>
+                    <a href="./AnkitKumarResume.pdf" class="btn" id="download-cvv-btn">Download CVV</a>
                 </div>
             </div>
         </div>
@@ -125,7 +125,8 @@
                         <strong>problem solving</strong>. I love to solve the problems. I'm very
                         <strong>hardwoking</strong> guy. I'm also in good in <strong>Communication</strong>. I 'm very
                         organised person with positive attitude. I believe in quote <em>"If those can do, then I can
-                            also do.</em></p> Always believes that I will definitely do this. Along with these things I
+                            also do.</em>
+                    </p> Always believes that I will definitely do this. Along with these things I
                     have a very huge interest in cooking. I loves the cooking very mu7ch and I always wants to spend my
                     free time in kitchen. And in last I just want to say that I always ready to learn the latest things.
                 </div>
@@ -193,7 +194,8 @@
                     <div class="box">
                         <img src="images/Profile1.jpg" alt="Team Member 1">
                         <div class="text">Ankit Kumar</div>
-                        <p>As you already know me that I'm Ankit Kumar, a Full Stack Web Developer. I'm very passionate about coding and love to doing it.</p>
+                        <p>As you already know me that I'm Ankit Kumar, a Full Stack Web Developer. I'm very passionate
+                            about coding and love to doing it.</p>
                         <hr>
                         <div class="teamContact flex justify-between">
                             <div class="text2">Full Stack Developer</div>
@@ -209,7 +211,8 @@
                     <div class="box">
                         <img src="images/Profile2.jpg" alt="Team Member 2">
                         <div class="text">Abhishek Kumar</div>
-                        <p>He is also a brilliant Full Stack Developer. He also works as a freelancer. Mr. Abhishek has always believes that we can do this.</p>
+                        <p>He is also a brilliant Full Stack Developer. He also works as a freelancer. Mr. Abhishek has
+                            always believes that we can do this.</p>
                         <hr>
                         <div class="teamContact flex justify-between">
                             <div class="text2">Full Stack Developer</div>
@@ -282,7 +285,8 @@
             <div class="contact-content flex wrap justify-between">
                 <div class="column left">
                     <div class="text">Get in touch</div>
-                    <p>Here is my contact details, if you have any project or idea and want to deploy then you can discuss with me by just filling this form or email me.</p>
+                    <p>Here is my contact details, if you have any project or idea and want to deploy then you can
+                        discuss with me by just filling this form or email me.</p>
                     <div class="icon">
                         <div class="row flex align-center">
                             <i class="fa fa-user"></i>
@@ -334,9 +338,27 @@
     </section>
     <!-- Footer Section -->
     <footer>
-        <span>Created by <a href="https://ankitcode.netlify.app/">Ankit Kumar</a> | <i class="fa fa-copyright"></i> 2021 All right reserved</span>
+        <span>Created by <a href="https://ankitcode.netlify.app/">Ankit Kumar</a> | <i class="fa fa-copyright"></i> 2021
+            All right reserved</span>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="./js/main.js"></script>
+    <script>
+
+        var typed = new Typed('.typed1', {
+            strings: ['Full Stack Developer', 'Freelancer', 'Mentor'],
+            typeSpeed: 80,
+            backSpeed: 80,
+            loop: true
+        });
+        var typed = new Typed('.typed2', {
+            strings: ['Full Stack Developer', 'Freelancer', 'Mentor'],
+            typeSpeed: 80,
+            backSpeed: 80,
+            loop: true
+        });
+
+    </script>
 </body>
 
 </html>
